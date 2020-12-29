@@ -9,7 +9,8 @@ import {
 import { setContext } from "@apollo/client/link/context";
 
 const httpLink = createHttpLink({
-  uri: "http://localhost:5000",
+  // uri: "http://localhost:5000",
+  uri: "https://pacific-scrubland-14947.herokuapp.com/",
 });
 
 const authLink = setContext(() => {
